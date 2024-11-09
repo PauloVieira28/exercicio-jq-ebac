@@ -1,8 +1,7 @@
 * {
-    background-color: #f4f4f9;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -10,30 +9,110 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    flex-direction: column;  
+    background-color: black;
+    flex-direction: column;
+}
+
+h1 {
+    background-color: #e7b22e;
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona um espaço entre o título e o container */
 }
 
 .container {
+    width: 500px;
+    background-color: #333;
     display: flex;
-    flex-direction: column; /* Coloca o botão abaixo do grupo de input */
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
-.input-group {
-    display: flex;
-    align-items: center; /* Centraliza o label e o input verticalmente */
-    gap: 10px; /* Espaço entre o label e o input */
-    margin-bottom: 10px;
-    padding: 10px;
-}
-.input-group input{
-    padding: 5px;
+.container h4{
+    width: 100%;
+    color: white;
+    font-size: 20px;
+
 }
 
+.input-group {
+    width: 100%; /* Garante que o input ocupe toda a largura do container */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group h4 {
+    padding: 16px;
+    background-color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input-group input {
+    padding: 12px;
+    width: 100%; /* O input ocupará toda a largura do seu container */
+    margin-top: 5px;
+    background-color: black;
+    color: #e7b22e;
+    border: none;  
+    outline: none;
+    font-size: 16px;
+
+}
+.input-group input::placeholder{
+    color: #e7b22e;
+}
+.input-group input:hover{
+    border: 2px solid #e7b22e;
+    box-sizing: border-box;
+}
+
+
+
+input::placeholder, textarea::placeholder {
+    color: white;  /* Cor do texto do placeholder */
+}
 
 button {
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
+    width: 40%; /* Ajusta a largura do botão */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #eac54c;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #e7b22e;
+    transition: 0,7s;
+}
+
+#lista-tarefas {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove os marcadores da lista */
+    width: 100%;
+}
+
+#lista-tarefas li {
+    border-radius: 1px;
+    padding: 10px;
+    color: black;
+    width: 100%;
+    margin: 0; /* Remove a margem entre os itens */
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.line-through {
+    text-decoration: line-through;
 }

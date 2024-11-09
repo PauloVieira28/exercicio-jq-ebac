@@ -7,15 +7,16 @@
     <title>Lista de tarefas</title>
 </head>
 <body>
-    <header>
-        <h1>Minha lista de tarefas</h1>
-    </header>
+    <h1>Minha lista de tarefas</h1>
     <div class="container">
-        <div class="input-group">
-            <label for="tarefa">Cadastrar tarefa</label>
-            <input type="text" id="tarefa">
-        </div>
-        <button type="submit">Adicionar</button>
+        <form class="input-group">
+            <ul id="lista-tarefas"></ul>
+            <h4 >Cadastrar tarefa</h4>
+            <input type="text" id="tarefa" placeholder="Digite uma tarefa">
+            <button type="submit">Adicionar</button>
+        </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
